@@ -301,3 +301,31 @@ Potential next steps include:
 ------------------------------------------------------------------------
 
 *SpeakAble --- Connect, communicate, and learn languages together.*
+
+## Screenshots
+
+### Authentication
+
+| Login | Sign Up |
+|:---:|:---:|
+| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
+
+### Discover
+
+![Discover](screenshots/discover.png)
+
+### Messages
+
+![Messages](screenshots/messages.png)
+
+### Real-Time Chat
+
+![Chat](screenshots/chat.png)
+
+### Profile
+
+![Profile](screenshots/profile.png)
+
+### Exchange Requests
+
+![Requests](screenshots/requests.png)
