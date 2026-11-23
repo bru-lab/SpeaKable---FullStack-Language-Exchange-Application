@@ -219,31 +219,6 @@ hosting provider's environment settings.
 
 ## Deployment
 
-## Screenshots
-
-### Authentication
-
-| Login | Sign Up |
-|:---:|:---:|
-| ![Login](screenshots/login.png) | ![Signup](screenshots/signup.png) |
-
-### Main Features
-
-#### Discover
-![Discover](screenshots/discover.png)
-
-#### Messages
-![Messages](screenshots/messages.png)
-
-#### Chat
-![Chat](screenshots/chat.png)
-
-#### Profile
-![Profile](screenshots/profile.png)
-
-#### Exchange Requests
-![Requests](screenshots/requests.png)
-
 The current deployment uses Render:
 
 -   The **backend** runs as a Docker-based web service.
