@@ -19,19 +19,27 @@ dotenv.config();
 const app = express();
 const httpServer = createServer(app);
 
+const normalizeOrigin = (origin) => {
+    return origin?.trim().replace(/\/+$/, "");
+};
+
 const allowedOrigins = [
     "http://localhost:8081",
     "http://192.168.15.8:8081",
     process.env.FRONTEND_URL,
-].filter(Boolean);
+]
+    .map(normalizeOrigin)
+    .filter(Boolean);
+
+console.log("Allowed CORS origins:", allowedOrigins);
 
 const corsOptions = {
     origin: (origin, callback) => {
-        // Allow native mobile apps and requests without an Origin header.
-        if (!origin || allowedOrigins.includes(origin)) {
+        if (!origin || allowedOrigins.includes(normalizeOrigin(origin))) {
             return callback(null, true);
         }
 
+        console.error("Blocked CORS origin:", origin);
         return callback(new Error("Not allowed by CORS"));
     },
     credentials: true,
